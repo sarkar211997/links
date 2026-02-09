@@ -9,7 +9,7 @@ let currentUser = null; // simple session
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://chizal461_db_user:<db_password>@cluster0.icfsvrw.mongodb.net/?appName=Cluster0")
+mongoose.connect("mongodb+srv://chizal461_db_user:Sarkar@1990@cluster0.icfsvrw.mongodb.net/?appName=Cluster0")
   .then(() => console.log("Database Connected"));
 
 app.get("/", (req, res) => {
@@ -100,5 +100,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server running");
 });
+
 
 
